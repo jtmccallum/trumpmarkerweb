@@ -1,0 +1,120 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+    <link rel="icon" type="image/png" href="img/favicon.ico">
+    <link href='http://fonts.googleapis.com/css?family=Montserrat:700,400' rel='stylesheet' type='text/css'>
+    <link href="css/main.css" media="screen" rel="stylesheet" type="text/css" />
+    <script src="js/jquery1_11_1.min.js"></script>
+    <script src="js/jquery-ui1_11_1.js"></script>
+    <script src="js/soundjs-0.6.0.min.js"></script>
+    <script src="js/main.js" type="text/javascript"></script>
+    
+    <!--- Google Analytics --->
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-61539875-1', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+    
+    <title>Trump Marker</title>
+</head>
+
+<body>
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5498907d70f01ddc" async="async"></script>
+
+
+    <!--  attempt using <table>  -->
+    <table cellspacing="0" cellpadding="0">
+        <tr>
+            <td id="titleBar" colspan="4">
+		      Trump Marker
+            </td>
+        </tr>
+        <tr id="subTitleBar">
+        	<td></td>
+            <td text-align="left">
+            	<img src="img/guestion.png" title="What is this?" id="whatIs">
+            	<img src="img/info.png" title="Info" id="info">
+            	<img src="img/shopping_cart.png" title="Shop" id="shop" hidden>    
+                <img src="img/mute.png" title="Click to toggle sound" id="soundIcon">
+                <img src="img/scoreboard2.png" title="Click to toggle scoreboard" id="scoreIcon">
+            </td>
+            <td text-align="right">
+                <div class="addthis_sharing_toolbox"></div>
+            </td>
+            <td></td>
+		</tr>
+		<tr>
+			<td></td>
+            <td id="infoBar" colspan="2">
+				<div id="whatIsP" hidden>
+
+Does the question "what's trump again?" come up too often in your euchre games?  TrumpMarker helps keep track of this hand's trump suit if you click or tap on a suit after calling.<br><br>
+                    
+Click from suit to suit as trump changes, click again on a suit to 'un-trump' it, or use the Clear button to show that trump hasn't been called.  <div class="hide">Click here to hide this</div>
+                </div>
+				<div id="infoP" hidden>
+                    
+James McCallum is an amateur web developer and a terrible euchre player.  He lives in Ottawa, Canada, where he works as a Project Manager.  You can find him on <a href="http://ca.linkedin.com/in/jmccallum1/" target="_blank">LinkedIn</a> or send him an email at trumpmarker [at] gmail [dot] com.<br><br>
+                    
+James thanks <a href="http://www.codecademy.com/" target="_blank">Codecademy</a> for teaching him JavaScript, <a href="http://brackets.io/" target="_blank">Adobe Brackets</a> for the simple web development environment, and his friends for teaching him euchre over the course of a dozen years of cottage weekends.  <div class="hide">Click here to hide this</div>
+                
+                </div>
+			</td>
+            <td></td>
+		</tr>
+        <tr>
+            <td rowspan="2" class="scoreboard" id="scoreboard1">
+                <input type=text value="Team 1" align="middle">
+                <div id="score1">0</div>
+               
+                    <button class="scoreButton" data-value="1">+1</button>
+                    <button class="scoreButton" data-value="2">+2</button>
+                    <button class="scoreButton" data-value="4">+4</button>
+                    <br>
+                    <button class="scoreButton" data-value="0">Clear Score</button>
+                   
+            </td>
+            
+            
+            <td id="heart" class="suit redSuit" data-sound="heartsSound">&hearts;</td>
+            <td id="diamond" class="suit redSuit" data-sound="diamondsSound">&diams;</td>
+            
+            
+            <td rowspan="2" class="scoreboard" id="scoreboard2">
+                <input type=text value="Team 2">
+                <div id="score2">0</div>
+                
+                    <button class="scoreButton" data-value="1">+1</button>
+                    <button class="scoreButton" data-value="2">+2</button>
+                    <button class="scoreButton" data-value="4">+4</button>
+                    <br>
+                    <button class="scoreButton" data-value="0">Clear Score</button>
+                
+            </td>
+        </tr>
+        <tr>
+            <td id="club" class="suit blkSuit" data-sound="clubsSound">&clubs;</td>
+            <td id="spade" class="suit blkSuit" data-sound="spadesSound">&spades;</td>
+	</tr>
+	<tr>
+        <td></td>
+        <td colspan="2">
+            <div id="clr">Clear</div>
+        </td>
+        <td></td>
+    </tr>
+
+    </table>
+
+</body>
+
+
+
+</html>

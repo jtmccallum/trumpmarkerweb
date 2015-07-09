@@ -1,0 +1,125 @@
+body {
+    font-family: 'Montserrat', sans-serif;    
+}
+
+a {
+    text-decoration: none;
+}
+
+#titleBar {
+	/*border-style: solid;*/
+    font-weight: 400;
+	font-size: 60px;
+	font-weight: bold;
+
+}
+
+#subTitleBar {
+	text-align: center;
+	padding-bottom: 5px;
+}
+
+#infoBar{
+    text-align: left;
+    width: 400px;
+}
+
+#infoBar a {
+    color: blue;
+}
+
+img {
+	height: 24px;
+	width: 24px;
+}
+
+ul {
+	padding: 5px;
+}
+
+li {
+	display: inline;
+	padding: 0px 10px 0px 10px;
+}
+
+.hide {
+    font-size: 10px;
+    text-align: right;
+}
+
+table {
+    margin: 0 auto;
+    align: center;
+    text-align: center;
+}
+
+.scoreboard {
+    opacity: 0; 
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+.scoreboard div {
+    vertical-align: middle;
+    font-size: 120px;
+}
+
+input {
+    text-align: center;
+}
+
+
+.suit {
+  font-family: 'Verdana', sans-serif;
+    display: table-cell;
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 140px;
+  padding-bottom: 10px;
+}
+
+.redSuit {
+  color: red;
+}
+
+.blkSuit.trump {
+  color: white;
+  background-color: black;
+}
+
+.redSuit.trump {
+  color: white;
+  background-color: red;
+}
+
+#clr {
+  margin-top: 10px;
+  text-align: center;
+  border-radius: 10px;
+  background-color: #3498db;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 30px;
+  width: 200px;
+  padding: 10px 30px 10px 30px;
+  text-decoration: none;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#clr:hover {
+  background: #3cb0fd;
+  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+  text-decoration: none;
+}
+
+
